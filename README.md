@@ -1,5 +1,8 @@
 # How Query Engines Work
 
+NOTE: This is a fork of original repo to keep notes while reading the book https://howqueryengineswork.com/00-introduction.html.
+Most notes should be under the Kotlin implementation in [jvm](jvm).
+
 This is the companion repository for the book [How Query Engines Work](https://leanpub.com/how-query-engines-work)
 and contains source code for a simple in-memory query engine implemented in Kotlin.
 
