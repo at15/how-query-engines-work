@@ -37,4 +37,17 @@ Expressions are defined in Expressions.kt, multiple classes in one file one good
 
 ## Logical Plan
 
-- [ ] join etc.
+- Scan, leaf plan on a data source with (simple) projection
+    - [ ] What is the `path` for? print?
+- Projection, can apply expression of fields, not just selecting fields, e.g. `SELECT a + 2, b - 3`
+- Selection, where, e.g. `SELECT a FROM foo WHERE a > 10`
+- Aggregation, `SELECT department, COUNT(*) FROM people GROUP BY department`
+- [ ] Join is in code but not mentioned in book
+- [ ] No sort ...
+
+## DataFrame
+
+Just a fluent builder to avoid calling individual plan's constructor.
+
+-
+Spark https://github.com/apache/spark/blob/3c967f06e6c37360e53f9c7a5ecff95ae818e713/sql/core/src/main/scala/org/apache/spark/sql/Dataset.scala#L1715
